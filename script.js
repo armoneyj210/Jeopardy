@@ -7,8 +7,11 @@
 // create a class for the squares names square
 
 // when the play button is clicked create the game board using a for loop
+let categories = ["Food", "Science", "Music", "Film", "Sports", "Art"];
+
 for (let i = 0; i < 36; i++) {
   let gameBoard = document.createElement("div");
+
   if (i >= 6 && i < 12) {
     gameBoard.textContent = "$200";
   } else if (i >= 12 && i < 18) {
@@ -20,9 +23,13 @@ for (let i = 0; i < 36; i++) {
   } else if (i >= 30 && i < 36) {
     gameBoard.textContent = "$1000";
   }
-  document.body.appendChild(gameBoard).className = "square";
+  document.body.appendChild(gameBoard).classList.add("square");
+  if (i >= 0 && i < 6) {
+    gameBoard.textContent = categories[i];
+    gameBoard.classList.remove("square");
+    gameBoard.classList.add("categories");
+  }
 }
-
 // There shold be 36 squares; 30 for questions and 6 for categories
 
 // as the game board is created add the class square to the tiles
