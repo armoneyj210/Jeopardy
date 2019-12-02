@@ -1,0 +1,9 @@
+header {
+  font-size: 2.5rem;
+  background-color: #060ce9;
+  border: 3px solid black;
+  color: #fbfdfe;
+  text-align: center;
+  font-family: "Gyparody", monospace;
+  text-shadow: 3px 4px #000000;
+}
