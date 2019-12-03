@@ -14,14 +14,19 @@ for (let i = 0; i < 36; i++) {
 
   if (i >= 6 && i < 12) {
     gameBoard.textContent = "$200";
+    gameBoard.setAttribute(`data-dollar`, "$200");
   } else if (i >= 12 && i < 18) {
     gameBoard.textContent = "$400";
+    gameBoard.setAttribute(`data-dollar`, "$400");
   } else if (i >= 18 && i < 24) {
     gameBoard.textContent = "$600";
+    gameBoard.setAttribute(`data-dollar`, "$600");
   } else if (i >= 24 && i < 30) {
     gameBoard.textContent = "$800";
+    gameBoard.setAttribute(`data-dollar`, "$800");
   } else if (i >= 30 && i < 36) {
     gameBoard.textContent = "$1000";
+    gameBoard.setAttribute(`data-dollar`, "$1000");
   }
   document.body.appendChild(gameBoard).classList.add("square");
   if (i >= 0 && i < 6) {

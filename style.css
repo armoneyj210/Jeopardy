@@ -9,6 +9,7 @@ header {
 }
 body {
   background-color: black;
+  width: 100;
 }
 .categories {
   float: left;
