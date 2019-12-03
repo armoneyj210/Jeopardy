@@ -11,6 +11,8 @@ header {
 body {
   background-color: black;
   width: 100;
+  box-sizing: border-box;
+  margin: 10px auto;
 }
 .categories {
   float: left;
@@ -63,4 +65,7 @@ div:hover {
   text-align: center;
   font-size: 2em;
   text-shadow: 1px 1px #fad201;
+}
+.hidden {
+  display: none;
 }
