@@ -34,6 +34,19 @@ for (let i = 0; i < 36; i++) {
     gameBoard.classList.remove("square");
     gameBoard.classList.add("categories");
   }
+  if (i % 6 === 0) {
+    gameBoard.setAttribute(`data-cat`, `food`);
+  } else if (i === 7 || i === 13 || i === 19 || i === 25 || i == 31) {
+    gameBoard.setAttribute(`data-cat`, `science`);
+  } else if (i === 8 || i === 14 || i === 20 || i === 26 || i === 32) {
+    gameBoard.setAttribute(`data-cat`, `music`);
+  } else if (i % 3 === 0) {
+    gameBoard.setAttribute(`data-cat`, `film`);
+  } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
+    gameBoard.setAttribute(`data-cat`, `sports`);
+  } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
+    gameBoard.setAttribute(`data-cat`, `art`);
+  }
 }
 // There shold be 36 squares; 30 for questions and 6 for categories
 
