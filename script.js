@@ -12,14 +12,14 @@ let playButton = document.querySelector(".playButton");
 let questions = [
   {
     cat: "Food",
-    answer: "The sound does a doggy makes",
+    answer: "The bread traditionally served with Eggs Benedict",
     solution: [
-      "What is bark?",
-      "What is moo?",
-      "What is meow?",
-      "What is oink?"
+      "What is English Muffin?",
+      "What is a biscuit?",
+      "What is toast?",
+      "What is unleavened bread?"
     ],
-    correct: "What is bark",
+    correct: "What is English Muffin?",
     dollar: "$200"
   },
   {
@@ -29,10 +29,46 @@ let questions = [
       "What is 212 F?",
       "What is 110 F?",
       "What is 300 F?",
-      "What is 350 F"
+      "What is 350 F?"
     ],
     correct: "What is 212 F?",
     dollar: "$400"
+  },
+  {
+    cat: "Food",
+    answer: "Chevre is a type of cheese made from this animal.",
+    solution: [
+      "What is a goat?",
+      "What is a cow?",
+      "What is a sheep?",
+      "What is a dog?"
+    ],
+    correct: "What is 212 F?",
+    dollar: "$600"
+  },
+  {
+    cat: "Food",
+    answer: "Kitchen Confidential was written by",
+    solution: [
+      "Who is Emeril Lagasse?",
+      "Who is Bobby Flay?",
+      "Who is Guy Fieri?",
+      "Who is Anthony Bourdain?"
+    ],
+    correct: "What is ?",
+    dollar: "$800"
+  },
+  {
+    cat: "Food",
+    answer: "Argentinian steak sauce is traditionally called this.",
+    solution: [
+      "What is A1?",
+      "What is ketchup?",
+      "What is chimichurri?",
+      "What is  haricot verts?"
+    ],
+    correct: "What is chimichurri?",
+    dollar: "$1000"
   }
 ];
 
@@ -106,7 +142,6 @@ for (let i = 0; i < 36; i++) {
     }
   });
 }
-// let squares = document.querySelectorAll(".square");
 
 let food200 = document.querySelector(`[data-dollar='$200'][data-cat='food']`);
 let food400 = document.querySelector(`[data-dollar='$400'][data-cat='food']`);
