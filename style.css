@@ -21,9 +21,9 @@ body {
   text-shadow: 3px 4px #000000;
   text-align: center;
   font-size: 3.25em;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   width: 200px;
-  height: 150px;
+  height: 125px;
   color: #fbfdfe;
   background-color: #060ce9;
   margin: 5px 5px;
@@ -36,16 +36,16 @@ body {
   text-shadow: 3px 4px #000000;
   text-align: center;
   font-size: 4em;
-  padding-top: 1.25em;
+  padding-top: 0.5em;
   width: 200px;
-  height: 150px;
+  height: 125px;
   color: #fad201;
   background-color: #060ce9;
   margin: 5px 5px;
   border: 2px solid black;
   border-radius: 25px;
 }
-div:hover {
+.square:hover {
   border-color: #fad201;
 }
 .playButton {

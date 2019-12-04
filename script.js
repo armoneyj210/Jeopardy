@@ -62,6 +62,8 @@ for (let i = 0; i < 36; i++) {
 }
 
 let food200 = document.querySelector(`[data-dollar='$200'][data-cat='food']`);
+food200.setAttribute("data-target", "#exampleModal");
+food200.setAttribute("data-toggle", "modal");
 let food400 = document.querySelector(`[data-dollar='$400'][data-cat='food']`);
 let food600 = document.querySelector(`[data-dollar='$600'][data-cat='food']`);
 let food800 = document.querySelector(`[data-dollar='$800'][data-cat='food']`);
