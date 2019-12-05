@@ -8,7 +8,7 @@
 // also the value of each square should be set using a dataset attribute
 
 let playButton = document.querySelector(".playButton");
-
+let score = 0;
 let questions = [
   {
     cat: "Food",
@@ -437,9 +437,21 @@ for (let i = 0; i < 36; i++) {
         solution4.textContent = questions[i].solution[3];
       }
     }
+
+    let submit = document.querySelector(".btn-primary");
+    submit.addEventListener("click", function() {
+      for (let i = 0; i < questions.length; i++) {
+        let solutionCheck = document.querySelector(
+          `input[name= "exampleRadios"]:checked`
+        ).nextElementSibling.textContent;
+
+        if (solutionCheck === questions[i].correct) {
+        }
+        submit.setAttribute("data-dismiss", "modal");
+      }
+    });
   });
 }
-
 let food200 = document.querySelector(`[data-dollar='$200'][data-cat='food']`);
 let food400 = document.querySelector(`[data-dollar='$400'][data-cat='food']`);
 let food600 = document.querySelector(`[data-dollar='$600'][data-cat='food']`);
