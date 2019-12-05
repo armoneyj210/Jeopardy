@@ -8,7 +8,7 @@
 // also the value of each square should be set using a dataset attribute
 
 let playButton = document.querySelector(".playButton");
-let score = 0;
+
 let questions = [
   {
     cat: "Food",
@@ -20,7 +20,7 @@ let questions = [
       "What is French Toast?"
     ],
     correct: "What is English Muffin?",
-    dollar: "$200"
+    dollar: "200"
   },
   {
     cat: "Food",
@@ -32,7 +32,7 @@ let questions = [
       "What is 350 F?"
     ],
     correct: "What is 212 F?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Food",
@@ -44,7 +44,7 @@ let questions = [
       "What is a dog?"
     ],
     correct: "What is 212 F?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Food",
@@ -56,7 +56,7 @@ let questions = [
       "Who is Anthony Bourdain?"
     ],
     correct: "Who is Anthony Bourdain?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Food",
@@ -68,7 +68,7 @@ let questions = [
       "What is haricot verts?"
     ],
     correct: "What is chimichurri?",
-    dollar: "$1000"
+    dollar: "1000"
   },
   {
     cat: "Science",
@@ -76,7 +76,7 @@ let questions = [
       "Hydrogen is represented by this symbol on the periodic table of elements.",
     solution: ["What is He?", "What is Hr?", "What is H?", "What is O?"],
     correct: "What is H?",
-    dollar: "$200"
+    dollar: "200"
   },
   {
     cat: "Science",
@@ -88,7 +88,7 @@ let questions = [
       "What is solids?"
     ],
     correct: "What is solids?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Science",
@@ -100,7 +100,7 @@ let questions = [
       "What is Mercury?"
     ],
     correct: "What is Jupiter?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Science",
@@ -112,7 +112,7 @@ let questions = [
       "What is warm water?"
     ],
     correct: "What is warm water?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Science",
@@ -124,7 +124,7 @@ let questions = [
       "What is finch?"
     ],
     correct: "What is finch?",
-    dollar: "$1000"
+    dollar: "1000"
   },
   {
     cat: "Music",
@@ -136,7 +136,7 @@ let questions = [
       "Who is Madonna?"
     ],
     correct: "Who is Madonna?",
-    dollar: "$200"
+    dollar: "200"
   },
   {
     cat: "Music",
@@ -149,7 +149,7 @@ let questions = [
       "Who is Ivan Neville?"
     ],
     correct: "Who is Louis Armstrong?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Music",
@@ -162,7 +162,7 @@ let questions = [
       "What is 10 months?"
     ],
     correct: "What is 10 years?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Music",
@@ -174,7 +174,7 @@ let questions = [
       "What is the Scarlet Falcon?"
     ],
     correct: "What is the American Pie?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Music",
@@ -187,7 +187,7 @@ let questions = [
       "Who is Slayer?"
     ],
     correct: "Who is the Red Hot Chili Peppers?",
-    dollar: "$1000"
+    dollar: "1000"
   },
   {
     cat: "Film",
@@ -199,8 +199,8 @@ let questions = [
       "Who is the Black Knight?",
       "Who is Roger the Shrubber?"
     ],
-    correct: "Who is the Black Night?",
-    dollar: "$200"
+    correct: "Who is the Black Knight?",
+    dollar: "200"
   },
   {
     cat: "Film",
@@ -213,7 +213,7 @@ let questions = [
       "Who is Anthony Edwards?"
     ],
     correct: "Who is Anthony Edwards?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Film",
@@ -226,7 +226,7 @@ let questions = [
       "What is powdered sugar?"
     ],
     correct: "What is asbestos?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Film",
@@ -238,7 +238,7 @@ let questions = [
       "What is Amityville Horror?"
     ],
     correct: "What is Psycho?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Film",
@@ -251,7 +251,7 @@ let questions = [
       "What is Jordan?"
     ],
     correct: "What is Jordan?",
-    dollar: "$1000"
+    dollar: "1000"
   },
   {
     cat: "Sports",
@@ -263,7 +263,7 @@ let questions = [
       "What is Auburn University?"
     ],
     correct: "What is Louisiana State University?",
-    dollar: "$200"
+    dollar: "200"
   },
   {
     cat: "Sports",
@@ -271,7 +271,7 @@ let questions = [
       "The New England Patriots have one the Super Bowl this many times since 2001.",
     solution: ["What is 6?", "What is 5?", "What is 7?", "What is 4?"],
     correct: "What is 6?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Sports",
@@ -284,7 +284,7 @@ let questions = [
       "Who is Bill Russell?"
     ],
     correct: "Who is Larry Bird?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Sports",
@@ -296,7 +296,7 @@ let questions = [
       "What is Uruguay?"
     ],
     correct: "What is Uruguay?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Sports",
@@ -309,7 +309,7 @@ let questions = [
       "Who is Johnny Mathis?"
     ],
     correct: "Who is himself?",
-    dollar: "$1000"
+    dollar: "1000"
   },
   {
     cat: "Art",
@@ -321,7 +321,7 @@ let questions = [
       "Who is Picasso?"
     ],
     correct: "Who is Monet?",
-    dollar: "$200"
+    dollar: "200"
   },
   {
     cat: "Art",
@@ -333,7 +333,7 @@ let questions = [
       "Who is Raphael?"
     ],
     correct: "Who is Da Vinci?",
-    dollar: "$400"
+    dollar: "400"
   },
   {
     cat: "Art",
@@ -345,7 +345,7 @@ let questions = [
       "Who is Rembrandt?"
     ],
     correct: "Who is Whistler?",
-    dollar: "$600"
+    dollar: "600"
   },
   {
     cat: "Art",
@@ -357,7 +357,7 @@ let questions = [
       "What is cigarette butts?"
     ],
     correct: "What is air?",
-    dollar: "$800"
+    dollar: "800"
   },
   {
     cat: "Art",
@@ -365,10 +365,11 @@ let questions = [
       "The number of paintings Vincent Van Gogh sold during his lifetime.",
     solution: ["What is 227?", "What is 54?", "What is 1?", "What is none?"],
     correct: "What is 1?",
-    dollar: "$1000"
+    dollar: "1000"
   }
 ];
-
+let score = 0;
+let score1 = document.querySelector(".score");
 for (let i = 0; i < 36; i++) {
   let gameBoard = document.createElement("div");
   let categories = ["Food", "Science", "Music", "Film", "Sports", "Art"];
@@ -377,19 +378,19 @@ for (let i = 0; i < 36; i++) {
   gameBoard.setAttribute("data-toggle", "modal");
   if (i >= 6 && i < 12) {
     gameBoard.textContent = "$200";
-    gameBoard.setAttribute(`data-dollar`, "$200");
+    gameBoard.setAttribute(`data-dollar`, "200");
   } else if (i >= 12 && i < 18) {
     gameBoard.textContent = "$400";
-    gameBoard.setAttribute(`data-dollar`, "$400");
+    gameBoard.setAttribute(`data-dollar`, "400");
   } else if (i >= 18 && i < 24) {
     gameBoard.textContent = "$600";
-    gameBoard.setAttribute(`data-dollar`, "$600");
+    gameBoard.setAttribute(`data-dollar`, "600");
   } else if (i >= 24 && i < 30) {
     gameBoard.textContent = "$800";
-    gameBoard.setAttribute(`data-dollar`, "$800");
+    gameBoard.setAttribute(`data-dollar`, "800");
   } else if (i >= 30 && i < 36) {
     gameBoard.textContent = "$1000";
-    gameBoard.setAttribute(`data-dollar`, "$1000");
+    gameBoard.setAttribute(`data-dollar`, "1000");
   }
   document.body.appendChild(gameBoard).classList.add("square");
   if (i >= 0 && i < 6) {
@@ -435,62 +436,34 @@ for (let i = 0; i < 36; i++) {
         solution2.textContent = questions[i].solution[1];
         solution3.textContent = questions[i].solution[2];
         solution4.textContent = questions[i].solution[3];
+        this.classList.add("invisible");
       }
     }
-
-    let submit = document.querySelector(".btn-primary");
-    submit.addEventListener("click", function() {
-      for (let i = 0; i < questions.length; i++) {
-        let solutionCheck = document.querySelector(
-          `input[name= "exampleRadios"]:checked`
-        ).nextElementSibling.textContent;
-
-        if (solutionCheck === questions[i].correct) {
-        }
-        submit.setAttribute("data-dismiss", "modal");
-      }
-    });
   });
 }
-let food200 = document.querySelector(`[data-dollar='$200'][data-cat='food']`);
-let food400 = document.querySelector(`[data-dollar='$400'][data-cat='food']`);
-let food600 = document.querySelector(`[data-dollar='$600'][data-cat='food']`);
-let food800 = document.querySelector(`[data-dollar='$800'][data-cat='food']`);
-let food1000 = document.querySelector(`[data-dollar='$1000'][data-cat='food']`);
+let submit = document.querySelector(".btn-primary");
+submit.setAttribute("data-dismiss", "modal");
 
-let sci200 = document.querySelector(`[data-dollar='$200'][data-cat='science']`);
-let sci400 = document.querySelector(`[data-dollar='$400'][data-cat='science']`);
-let sci600 = document.querySelector(`[data-dollar='$600'][data-cat='science']`);
-let sci800 = document.querySelector(`[data-dollar='$800'][data-cat='science']`);
-let sci1000 = document.querySelector(
-  `[data-dollar='$1000'][data-cat='science']`
-);
+submit.addEventListener("click", function() {
+  let solutionCheck = document.querySelector(
+    `input[name= "exampleRadios"]:checked`
+  ).nextElementSibling.textContent;
+  let clicked = document.querySelectorAll(`.invisible`);
 
-let mus200 = document.querySelector(`[data-dollar='$200'][data-cat='music']`);
-let mus400 = document.querySelector(`[data-dollar='$400'][data-cat='music']`);
-let mus600 = document.querySelector(`[data-dollar='$600'][data-cat='music']`);
-let mus800 = document.querySelector(`[data-dollar='$800'][data-cat='music']`);
-let mus1000 = document.querySelector(`[data-dollar='$1000'][data-cat='music']`);
-
-let film200 = document.querySelector(`[data-dollar='$200'][data-cat='film']`);
-let film400 = document.querySelector(`[data-dollar='$400'][data-cat='film']`);
-let film600 = document.querySelector(`[data-dollar='$600'][data-cat='film']`);
-let film800 = document.querySelector(`[data-dollar='$800'][data-cat='film']`);
-let film1000 = document.querySelector(`[data-dollar='$1000'][data-cat='film']`);
-
-let sport200 = document.querySelector(`[data-dollar='$200'][data-cat='sport']`);
-let sport400 = document.querySelector(`[data-dollar='$400'][data-cat='sport']`);
-let sport600 = document.querySelector(`[data-dollar='$600'][data-cat='sport']`);
-let sport800 = document.querySelector(`[data-dollar='$800'][data-cat='sport']`);
-let sport1000 = document.querySelector(
-  `[data-dollar='$1000'][data-cat='sport']`
-);
-
-let art200 = document.querySelector(`[data-dollar='$200'][data-cat='art']`);
-let art400 = document.querySelector(`[data-dollar='$400'][data-cat='art']`);
-let art600 = document.querySelector(`[data-dollar='$600'][data-cat='art']`);
-let art800 = document.querySelector(`[data-dollar='$800'][data-cat='art']`);
-let art1000 = document.querySelector(`[data-dollar='$1000'][data-cat='art']`);
+  for (let i = 0; i < questions.length; i++) {
+    if (solutionCheck === questions[i].correct) {
+      score += parseInt(questions[i].dollar);
+      score1.textContent = score;
+      console.log(clicked);
+      if (score1.textContent >= 5000) {
+        alert("you won");
+        return null;
+      } else if (score1.textContent < 5000 && clicked.length === 30) {
+        alert("you lose");
+      }
+    }
+  }
+});
 
 // Set the users score to zero
 
