@@ -14,10 +14,10 @@ let questions = [
     cat: "Food",
     answer: "The bread traditionally served with Eggs Benedict",
     solution: [
-      "What is English Muffin?",
+      "What is an English Muffin?",
       "What is a biscuit?",
-      "What is toast?",
-      "What is unleavened bread?"
+      "What is a pancake?",
+      "What is French Toast?"
     ],
     correct: "What is English Muffin?",
     dollar: "$200"
@@ -55,7 +55,7 @@ let questions = [
       "Who is Guy Fieri?",
       "Who is Anthony Bourdain?"
     ],
-    correct: "What is ?",
+    correct: "Who is Anthony Bourdain?",
     dollar: "$800"
   },
   {
@@ -65,10 +65,205 @@ let questions = [
       "What is A1?",
       "What is ketchup?",
       "What is chimichurri?",
-      "What is  haricot verts?"
+      "What is haricot verts?"
     ],
     correct: "What is chimichurri?",
     dollar: "$1000"
+  },
+  {
+    cat: "Science",
+    answer:
+      "Hydrogen is represented by this symbol on the periodic table of elements.",
+    solution: ["What is He?", "What is Hr?", "What is H?", "What is O?"],
+    correct: "What is H?",
+    dollar: "$200"
+  },
+  {
+    cat: "Science",
+    answer: "Atoms are most tightly packed in this type of matter.",
+    solution: [
+      "What is gases?",
+      "What is solids?",
+      "What is liquids?",
+      "What is solids?"
+    ],
+    correct: "What is solids?",
+    dollar: "$400"
+  },
+  {
+    cat: "Science",
+    answer: "This planet has the most moons.",
+    solution: [
+      "What is Jupiter?",
+      "What is Saturn?",
+      "What is Uranus?",
+      "What is Mercury?"
+    ],
+    correct: "What is Jupiter?",
+    dollar: "$600"
+  },
+  {
+    cat: "Science",
+    answer: "Hurricanes only form over this.",
+    solution: [
+      "What is cold water?",
+      "What is cold land?",
+      "What is warm land?",
+      "What is warm water?"
+    ],
+    correct: "What is warm water?",
+    dollar: "$800"
+  },
+  {
+    cat: "Science",
+    answer: "This species was famously studied by Charles Darwin",
+    solution: [
+      "What is crane?",
+      "What is sparrow?",
+      "What is pelican?",
+      "What is finch?"
+    ],
+    correct: "What is finch?",
+    dollar: "$1000"
+  },
+  {
+    cat: "Music",
+    answer: "This pop singer is known as the 'Material Girl'.",
+    solution: [
+      "Who is Taylor Swfit?",
+      "Who is Britney Spears?",
+      "Who is Ke$ha?",
+      "Who is Madonna?"
+    ],
+    correct: "Who is Madonna?",
+    dollar: "$200"
+  },
+  {
+    cat: "Music",
+    answer:
+      "The New Orleans International Airport is named for this famous jazz musician.",
+    solution: [
+      "Who is Dizzy Gillespie?",
+      "Who is Louis Armstrong?",
+      "Who is Billie Holiday?",
+      "Who is Ivan Neville?"
+    ],
+    correct: "Who is Louis Armstrong?",
+    dollar: "$400"
+  },
+  {
+    cat: "Music",
+    answer:
+      "This is the recommended drying or 'seasoning' time for wood used to make a violin.",
+    solution: [
+      "What is 10 weeks?",
+      "What is 10 days?",
+      "What is 10 years?",
+      "What is 10 months?"
+    ],
+    correct: "What is 10 years?",
+    dollar: "$600"
+  },
+  {
+    cat: "Music",
+    answer: "Buddy Holly crashed and died while on this airplane.",
+    solution: [
+      "What is the American Pie?",
+      "What is the Enola Gay?",
+      "What is the Spirit of St.Louis?",
+      "What is the Scarlet Falcon?"
+    ],
+    correct: "What is the American Pie?",
+    dollar: "$800"
+  },
+  {
+    cat: "Music",
+    answer:
+      "This band was originally named Tony Flow and the Miraculously Majestic Masters of Mayhem.",
+    solution: [
+      "Who is Metallica?",
+      "Who is the Red Hot Chili Peppers?",
+      "Who is Pearl Jam?",
+      "Who is Slayer?"
+    ],
+    correct: "Who is the Red Hot Chili Peppers?",
+    dollar: "$1000"
+  },
+  {
+    cat: "Film",
+    answer:
+      "This character in Monty Python and the Holy Grail insists that 'It's just a flesh wound'.",
+    solution: [
+      "Who is Sir Lancelot?",
+      "Who is King Arthur?",
+      "Who is the Black Knight?",
+      "Who is Roger the Shrubber?"
+    ],
+    correct: "Who is the Black Night?",
+    dollar: "$200"
+  },
+  {
+    cat: "Film",
+    answer:
+      "The only Top Gun actor who didn't vomit while in the fighter jets.",
+    solution: [
+      "Who is Tom Cruise?",
+      "Who is Val Kilmer?",
+      "Who is John Stockwell?",
+      "Who is Anthony Edwards?"
+    ],
+    correct: "Who is Anthony Edwards?",
+    dollar: "$400"
+  },
+  {
+    cat: "Film",
+    answer:
+      "In The Wizard of Oz (1939), this was used to simulate snow during the poppy scene.",
+    solution: [
+      "What is asbestos?",
+      "What is corn flakes?",
+      "What is coconut flakes?",
+      "What is powdered sugar?"
+    ],
+    correct: "What is asbestos?",
+    dollar: "$600"
+  },
+  {
+    cat: "Film",
+    answer: "A flushing toilet was first shown in this imfamous horror film.",
+    solution: [
+      "What is Texas Chainsaw Massacre?",
+      "What is A Nightmare on Elm Street?",
+      "What is Psycho?",
+      "What is Amityville Horror?"
+    ],
+    correct: "What is Psycho?",
+    dollar: "$800"
+  },
+  {
+    cat: "Film",
+    answer:
+      "In The Martian, this is where the Mars exterior scenes were shot .",
+    solution: [
+      "What is Namibia?",
+      "What is Israel?",
+      "What is Australia?",
+      "What is Jordan?"
+    ],
+    correct: "What is Jordan?",
+    dollar: "$1000"
+  },
+  {
+    cat: "Sports",
+    answer: "The team that won the 2019 SEC Championship game.",
+    solution: [
+      "What is Louisiana State University?",
+      "What is University of Alabama?",
+      "What is University of Georgia?",
+      "What is Auburn University?"
+    ],
+    correct: "What is Louisiana State University?",
+    dollar: "$200"
   }
 ];
 
