@@ -264,6 +264,108 @@ let questions = [
     ],
     correct: "What is Louisiana State University?",
     dollar: "$200"
+  },
+  {
+    cat: "Sports",
+    answer:
+      "The New England Patriots have one the Super Bowl this many times since 2001.",
+    solution: ["What is 6?", "What is 5?", "What is 7?", "What is 4?"],
+    correct: "What is 6?",
+    dollar: "$400"
+  },
+  {
+    cat: "Sports",
+    answer:
+      "The only person in NBA history to be named Most Valuable Player, Coach of the Year, and Executive of the Year.",
+    solution: [
+      "Who is Larry Bird?",
+      "Who is Michael Jordan?",
+      "Who is Phil Jackson?",
+      "Who is Bill Russell?"
+    ],
+    correct: "Who is Larry Bird?",
+    dollar: "$600"
+  },
+  {
+    cat: "Sports",
+    answer: "The country that won the first World Cup.",
+    solution: [
+      "What is England?",
+      "What is Brazil?",
+      "What is Argentina?",
+      "What is Uruguay?"
+    ],
+    correct: "What is Uruguay?",
+    dollar: "$800"
+  },
+  {
+    cat: "Sports",
+    answer:
+      "He was Cleveland Indians catcher Harry Chiti was traded for in 1962.",
+    solution: [
+      "Who is himself?",
+      "Who is Mike Piazza?",
+      "Who is Yogi Berra?",
+      "Who is Johnny Mathis?"
+    ],
+    correct: "Who is himself?",
+    dollar: "$1000"
+  },
+  {
+    cat: "Art",
+    answer: "He is considered the father of Impressionism.",
+    solution: [
+      "Who is Monet?",
+      "Who is Manet?",
+      "Who is Salvidor Dali?",
+      "Who is Picasso?"
+    ],
+    correct: "Who is Monet?",
+    dollar: "$200"
+  },
+  {
+    cat: "Art",
+    answer: "He painted the Mona Lisa.",
+    solution: [
+      "Who is Da Vinci?",
+      "Who is Michaelangelo?",
+      "Who is Donatello?",
+      "Who is Raphael?"
+    ],
+    correct: "Who is Da Vinci?",
+    dollar: "$400"
+  },
+  {
+    cat: "Art",
+    answer: "This artist is best known for a painting of his mother.",
+    solution: [
+      "Who is Whistler?",
+      "Who is Goya?",
+      "Who is Renoir?",
+      "Who is Rembrandt?"
+    ],
+    correct: "Who is Whistler?",
+    dollar: "$600"
+  },
+  {
+    cat: "Art",
+    answer: "Actor James Franco once sold a sculpture made of this.",
+    solution: [
+      "What is air?",
+      "What is water?",
+      "What is dryer lint?",
+      "What is cigarette butts?"
+    ],
+    correct: "What is air?",
+    dollar: "$800"
+  },
+  {
+    cat: "Art",
+    answer:
+      "The number of paintings Vincent Van Gogh sold during his lifetime.",
+    solution: ["What is 227?", "What is 54?", "What is 1?", "What is none?"],
+    correct: "What is 1?",
+    dollar: "$1000"
   }
 ];
 
@@ -305,7 +407,7 @@ for (let i = 0; i < 36; i++) {
   } else if (i % 3 === 0) {
     gameBoard.setAttribute(`data-cat`, `Film`);
   } else if (i === 10 || i === 16 || i === 22 || i === 28 || i === 34) {
-    gameBoard.setAttribute(`data-cat`, `Sport`);
+    gameBoard.setAttribute(`data-cat`, `Sports`);
   } else if (i === 11 || i === 17 || i === 23 || i === 29 || i === 35) {
     gameBoard.setAttribute(`data-cat`, `Art`);
   }
