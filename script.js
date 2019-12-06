@@ -9,7 +9,6 @@
 
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
-audio.load();
 audio.preload = "auto";
 audio.preload;
 audio.autoplay = true;
