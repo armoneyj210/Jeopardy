@@ -398,7 +398,10 @@ for (let i = 0; i < 36; i++) {
     gameBoard.textContent = "$1000";
     gameBoard.setAttribute(`data-dollar`, "1000");
   }
-  document.body.appendChild(gameBoard).classList.add("square");
+  document
+    .querySelector("main")
+    .appendChild(gameBoard)
+    .classList.add("square");
   if (i >= 0 && i < 6) {
     gameBoard.textContent = categories[i];
     gameBoard.removeAttribute("data-target");

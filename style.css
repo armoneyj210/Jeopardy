@@ -15,6 +15,11 @@ body {
   margin: 10px auto;
   text-align: center;
 }
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .categories {
   float: left;
   font-family: "OPTIKorinna-Agency", monospace;
@@ -22,7 +27,7 @@ body {
   text-align: center;
   font-size: 3.25em;
   padding-top: 0.3em;
-  width: 200px;
+  width: 14%;
   height: 125px;
   color: #fbfdfe;
   background-color: #060ce9;
@@ -37,7 +42,7 @@ body {
   text-align: center;
   font-size: 4em;
   padding-top: 0.3em;
-  width: 200px;
+  width: 14%;
   height: 125px;
   color: #fad201;
   background-color: #060ce9;
