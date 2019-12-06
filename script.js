@@ -456,19 +456,23 @@ submit.addEventListener("click", function() {
     `input[name= "exampleRadios"]:checked`
   ).nextElementSibling.textContent;
   let clicked = document.querySelectorAll(`.invisible`);
-
+  let modalAnswer = document.querySelector(".modal-answer");
   for (let i = 0; i < questions.length; i++) {
-    if (solutionCheck === questions[i].correct) {
-      score += parseInt(questions[i].dollar);
-      score1.textContent = score;
-      console.log(clicked);
-      if (score1.textContent >= 5000) {
-        alert("you won");
-        return null;
-      } else if (score1.textContent < 5000 && clicked.length === 30) {
-        alert("you lose");
+    if (modalAnswer.textContent === questions[i].answer) {
+      if (solutionCheck === questions[i].correct) {
+        score += parseInt(questions[i].dollar);
+        score1.textContent = score;
+      } else if (solutionCheck !== questions[i].correct) {
+        score -= parseInt(questions[i].dollar);
+        score1.textContent = score;
       }
     }
+  }
+  if (score1.textContent >= 5000) {
+    alert("you won");
+    return null;
+  } else if (score1.textContent < 5000 && clicked.length === 30) {
+    alert("you lose");
   }
 });
 
