@@ -9,6 +9,7 @@
 
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
+
 audio.autoplay = true;
 audio.load();
 let questions = [
@@ -371,7 +372,7 @@ let questions = [
   }
 ];
 let score = 0;
-let score1 = document.querySelector(".score");
+let score1 = document.querySelector("span");
 for (let i = 0; i < 36; i++) {
   let gameBoard = document.createElement("div");
   let categories = ["Food", "Science", "Music", "Film", "Sports", "Art"];
