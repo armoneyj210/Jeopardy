@@ -8,7 +8,8 @@
 // also the value of each square should be set using a dataset attribute
 
 let playButton = document.querySelector(".playButton");
-
+let audio = document.querySelector("audio");
+audio.autoplay = true;
 let questions = [
   {
     cat: "Food",
