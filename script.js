@@ -10,6 +10,7 @@
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
 audio.autoplay = true;
+audio.load();
 let questions = [
   {
     cat: "Food",
