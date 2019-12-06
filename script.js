@@ -10,6 +10,8 @@
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
 audio.load();
+audio.preload = "auto";
+audio.preload;
 audio.autoplay = true;
 audio.loop = true;
 
@@ -420,6 +422,7 @@ for (let i = 0; i < 36; i++) {
     playButton.classList.remove("playButton");
     playButton.classList.add("hidden");
     gameBoard.classList.remove("hidden");
+    audio.muted = true;
   });
   gameBoard.addEventListener("click", function(evt) {
     for (let i = 0; i < questions.length; i++) {
