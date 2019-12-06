@@ -9,9 +9,10 @@
 
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
-
-audio.autoplay = true;
 audio.load();
+audio.autoplay = true;
+audio.loop = true;
+
 let questions = [
   {
     cat: "Food",
