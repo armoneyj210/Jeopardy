@@ -9,9 +9,10 @@
 
 let playButton = document.querySelector(".playButton");
 let audio = document.querySelector("audio");
-audio.preload = "auto";
-audio.preload;
 audio.autoplay = true;
+audio.preload = "auto";
+
+// audio.load();
 audio.loop = true;
 
 let questions = [
