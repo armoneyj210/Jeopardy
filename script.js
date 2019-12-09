@@ -479,7 +479,7 @@ submit.addEventListener("click", function() {
       icon: "error",
       title: "Oops...",
       text: "You Lose!",
-      footer: <a href="https://sharp-raman-88b1ae.netlify.com/">Try Again?</a>
+      footer: "<a href='http://sharp-raman-88b1ae.netlify.com/'>Try Again?</a>"
     });
   }
 });
