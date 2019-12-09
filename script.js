@@ -472,10 +472,15 @@ submit.addEventListener("click", function() {
     }
   }
   if (score1.textContent >= 5000) {
-    alert("you won");
+    Swal.fire("Good job!", "You won!", "success");
     return null;
   } else if (score1.textContent < 5000 && clicked.length === 30) {
-    alert("you lose");
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "You Lose!",
+      footer: "<a href>Try again?</a>"
+    });
   }
 });
 
